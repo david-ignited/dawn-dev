@@ -37,15 +37,6 @@
         "padding_bottom": 52
       }
     },
-    "16433430954c71ecc2": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% unless page.title == 'Liquid' %}\nThe page title is Liquid\n{% endunless %}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "16433427020851ad71": {
       "type": "rich-text",
       "blocks": {
@@ -71,6 +62,24 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433433233a8471e9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if page.title == 'Liquid' %}\n{{'Liquid IF page'}}\n{% else %}\n{{'Not Liquid IF'}}\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433430954c71ecc2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% unless page.title != 'Liquid' %}\nunless: cuando no cumple se hace\n{% endunless %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -111,9 +120,10 @@
     "main",
     "1643342668f2f2072f",
     "16433428609f564480",
-    "16433430954c71ecc2",
     "16433427020851ad71",
     "1643339854cddbe664",
+    "16433433233a8471e9",
+    "16433430954c71ecc2",
     "16433430393a35a7df",
     "164334309315881b21"
   ]
