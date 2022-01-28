@@ -10,7 +10,7 @@
     "1643339854cddbe664": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{page.title}}",
+        "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid\n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
