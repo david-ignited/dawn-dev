@@ -15,10 +15,54 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1643342668f2f2072f": {
+      "type": "rich-text",
+      "blocks": {
+        "16433426680b661374-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Object",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16433426680b661374-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433427020851ad71": {
+      "type": "rich-text",
+      "blocks": {
+        "16433427028a7a0e27-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tag",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16433427028a7a0e27-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "1643339854cddbe664"
+    "1643339854cddbe664",
+    "1643342668f2f2072f",
+    "16433427020851ad71"
   ]
 }
