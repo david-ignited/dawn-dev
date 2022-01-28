@@ -7,15 +7,6 @@
         "padding_bottom": 28
       }
     },
-    "1643339854cddbe664": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid\n{% endif %}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "1643342668f2f2072f": {
       "type": "rich-text",
       "blocks": {
@@ -33,6 +24,24 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433428609f564480": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{page.title}}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433430954c71ecc2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% unless page.title == 'Liquid' %}\nThe page title is Liquid\n{% endunless %}",
+        "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -57,12 +66,55 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1643339854cddbe664": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16433430393a35a7df": {
+      "type": "rich-text",
+      "blocks": {
+        "1643343039d8f1033c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Filter",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "1643343039d8f1033c-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "164334309315881b21": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{ 'hello world' | capitalize }}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "1643339854cddbe664",
     "1643342668f2f2072f",
-    "16433427020851ad71"
+    "16433428609f564480",
+    "16433430954c71ecc2",
+    "16433427020851ad71",
+    "1643339854cddbe664",
+    "16433430393a35a7df",
+    "164334309315881b21"
   ]
 }
