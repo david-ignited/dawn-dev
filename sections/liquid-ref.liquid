@@ -1,13 +1,112 @@
-<h1>Liquid REFERENCE LOCAL 2 </h1>
+{% style %}
+.color-background-1{
+    background:{{section.settings.background}};
+}
+{% endstyle %}
+<h1>Text</h1>{{ section.settings.liquid_ref }}
+<h1>Checkbox</h1>
+{% if section.settings.liquid_checkbox == true %}
+Checkbox is Checked
+{% else %}
+Checkbox is not checked
+{% endif %}
+<h1>Number</h1>
+{% if section.settings.liquid_number > 0 %}{{ section.settings.liquid_number }}
+{% endif %}
+
+<h1>Radio</h1>
+{% if section.settings.liquid_radio == "option-1" %}
+Option 1 Selected
+{% else %}
+Option 2 Selected
+{% endif %}
+
+<h1>Range</h1>
+{{ section.settings.liquid_range }}
+
+<h1>Select</h1>
+{{ section.settings.liquid_select }}
+
+<h1>Text Area</h1>
+{{ section.settings.liquid_textarea }}
+
+<h1>Background</h1>
+{{section.settings.background}}
 
 {% schema %}
+
     {
         "name":"Liquid Reference",
         "settings": [
             {
-                "id":"liquid-ref",
+                "id":"liquid_ref",
                 "type":"text",
                 "label":"A Reference for Shopify Liquid"
+            },
+            {
+                "id":"liquid_checkbox",
+                "type":"checkbox",
+                "label":"A checkbox in Liquid"
+            },
+            {
+                "id":"liquid_number",
+                "type":"number",
+                "label":"Add a Number"
+            },
+            {
+                "id":"liquid_radio",
+                "type":"radio",
+                "label":"Choose an Option",
+                "options":[
+                    {
+                        "value":"option-1",
+                        "label":"Option 1"
+                    },
+                    {
+                        "value":"option-2",
+                        "label":"Option 2"
+                    }
+                ]
+            },
+            {
+                "id":"liquid_range",
+                "type":"range",
+                "label":"Range Selection",
+                "min":3,
+                "max":12,
+                "step":3,
+                "default": 3
+            },
+            {
+                "id":"liquid_select",
+                "type":"select",
+                "label":"Select Item",
+                "options":[
+                    {
+                        "value":"Option 1",
+                        "label":"Option 1"
+                    },
+                    {
+                        "value":"Option 2",
+                        "label":"Option 2"
+                    },
+                    {
+                        "value":"Option 3",
+                        "label":"Option 3"
+                    }
+                ],
+                "default":"Option 2"
+            },
+            {
+                "id":"liquid_textarea",
+                "type":"textarea",
+                "label":"Write whatever you want"
+            },
+            {
+                "type": "color_background",
+                "id": "background",
+                "label": "Background",
+                "default": "linear-gradient(#ffffff, #000000)"
             }
         ],
         "templates":["index", "page", "product"],

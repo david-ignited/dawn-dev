@@ -1,7 +1,23 @@
 {
   "sections": {
+    "16434805743794b98b": {
+      "type": "liquid-ref",
+      "settings": {
+        "liquid_ref": "",
+        "liquid_checkbox": true
+      }
+    },
+    "164347832531d3be1a": {
+      "type": "liquid-ref",
+      "disabled": true,
+      "settings": {
+        "liquid_ref": "",
+        "liquid_checkbox": false
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -9,9 +25,11 @@
     },
     "1643342668f2f2072f": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "16433426680b661374-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Object",
             "heading_size": "h1"
@@ -30,6 +48,7 @@
     },
     "16433428609f564480": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{{page.title}}",
         "color_scheme": "background-1",
@@ -39,6 +58,7 @@
     },
     "16433427020851ad71": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "16433427028a7a0e27-0": {
           "type": "heading",
@@ -60,8 +80,9 @@
     },
     "1643339854cddbe664": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid\n{% endif %}",
+        "custom_liquid": "{% if page.title == 'Liquid'%}\nYes, this is liquid WEBSITE\n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -69,6 +90,7 @@
     },
     "16433433233a8471e9": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% if page.title == 'Liquid' %}\n{{'Liquid IF page'}}\n{% else %}\n{{'Not Liquid IF'}}\n{% endif %}",
         "color_scheme": "background-1",
@@ -78,6 +100,7 @@
     },
     "16433430954c71ecc2": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% unless page.title != 'Liquid' %}\nunless: cuando no cumple se hace\n{% endunless %}",
         "color_scheme": "background-1",
@@ -87,6 +110,7 @@
     },
     "16433430393a35a7df": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1643343039d8f1033c-0": {
           "type": "heading",
@@ -108,6 +132,7 @@
     },
     "164334309315881b21": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{{ 'hello world 2' | capitalize }}",
         "color_scheme": "background-1",
@@ -117,6 +142,8 @@
     }
   },
   "order": [
+    "16434805743794b98b",
+    "164347832531d3be1a",
     "main",
     "1643342668f2f2072f",
     "16433428609f564480",

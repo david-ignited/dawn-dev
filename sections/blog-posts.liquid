@@ -1,0 +1,28 @@
+{% unless blog.articles_count == 0 %}
+    {{ blog.articles_count }}
+    There are blogs
+{% endunless %}
+
+{% schema %}
+{
+    "name":"New Blog Posts",
+    "settings":[
+        {
+            "id":"liquid_posts",
+            "type":"range",
+            "label":"Range Selection",
+            "min":3,
+            "max":12,
+            "step":3,
+            "default": 3
+        }
+    ],
+    "presets":[
+        {
+            "name":"New Blog Posts",
+            "category":"Posts"
+        }
+    ]
+}
+
+{% endschema %}
