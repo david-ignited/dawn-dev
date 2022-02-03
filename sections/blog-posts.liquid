@@ -1,20 +1,34 @@
+{% assign blog = section.settings.posts_range %}
+
 {% unless blog.articles_count == 0 %}
-    {{ blog.articles_count }}
-    There are blogs
+Hello1
+{% for articles in blog.articles %}
+    Hello2
+    {{ article.image }}
+    {{ article.title }}
+  
+{% endfor %}
+
 {% endunless %}
 
 {% schema %}
 {
+ 
     "name":"New Blog Posts",
     "settings":[
         {
-            "id":"liquid_posts",
+            "id":"posts_range",
             "type":"range",
             "label":"Range Selection",
             "min":3,
             "max":12,
             "step":3,
             "default": 3
+        },
+        {
+            "id":"new_blog",
+            "type":"blog",
+            "label":"Blog"
         }
     ],
     "presets":[

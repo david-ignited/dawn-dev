@@ -2,9 +2,16 @@
   "sections": {
     "16434805743794b98b": {
       "type": "liquid-ref",
+      "disabled": true,
       "settings": {
-        "liquid_ref": "",
-        "liquid_checkbox": true
+        "liquid_ref": "Custom TEXT",
+        "liquid_checkbox": true,
+        "liquid_number": 4,
+        "liquid_radio": "option-1",
+        "liquid_range": 9,
+        "liquid_select": "Option 3",
+        "liquid_textarea": "Hello world!",
+        "background": "radial-gradient(rgba(241, 241, 241, 1) 100%, rgba(0, 0, 0, 1) 100%)"
       }
     },
     "164347832531d3be1a": {
@@ -12,7 +19,12 @@
       "disabled": true,
       "settings": {
         "liquid_ref": "",
-        "liquid_checkbox": false
+        "liquid_checkbox": false,
+        "liquid_radio": "option-1",
+        "liquid_range": 3,
+        "liquid_select": "Option 2",
+        "liquid_textarea": "",
+        "background": "linear-gradient(#ffffff, #000000)"
       }
     },
     "main": {
@@ -139,6 +151,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "16434923839caef31d": {
+      "type": "blog-posts",
+      "settings": {
+        "posts_range": 3,
+        "new_blog": "blog-test-2"
+      }
     }
   },
   "order": [
@@ -152,6 +171,7 @@
     "16433433233a8471e9",
     "16433430954c71ecc2",
     "16433430393a35a7df",
-    "164334309315881b21"
+    "164334309315881b21",
+    "16434923839caef31d"
   ]
 }
