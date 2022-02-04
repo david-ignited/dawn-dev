@@ -1,5 +1,36 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
+{%style%}
+.button, .button-primary,.button:disabled, .button[aria-disabled=true], .button.disabled, .customer button:disabled, .customer button[aria-disabled=true], .customer button.disabled{
+  background-color:#005293;
+  opacity:1;
+  border-radius: 50px;
+  border-style:none;
+  outline-style:none;
+  
+}
+.button:focus { outline-style: none; }
+
+.announcment-banner{
+  display:flex;
+  background-color:#707070;
+  justify-content:center;
+ 
+  margin: 0;
+  padding:0;
+}
+.announcment-banner span{
+  align-text: center;
+  color:white;
+  padding:0;
+  gap:1px;
+  font-size:1.2rem;
+}
+
+
+
+{%endstyle%}
+
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
   @media screen and (max-width: 749px) {
@@ -96,15 +127,17 @@
               {%- if block.settings.button_label_1 != blank -%}
                 <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
               {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
-              {%- endif -%}
+            
 
             </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
+</div>
+<div class="announcment-banner">
+  
+  <span>FREE SHIPPING IN ALL ORDERS!</span>
 </div>
 
 {% schema %}
